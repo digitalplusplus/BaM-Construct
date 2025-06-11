@@ -21,14 +21,14 @@ Specific Multiplayer Features
 
 Specific AI Features
 ====================
-* AI Orchestrator component to control which AI components you want to leverage
-* AI Text Filter component to control what AI components to call using a basic lexical scanning mechanism using keywords
-* Many LLM's supported hosted on Google, GroqCloud and even local (Ollama)
-* 3 Speech to Text services supported: GroqCloud(OpenAI Whisper), HuggingFace(several inference models), ELevenlabs - in multiple languages
-* 3 Text to Speech services supported: Speechify (Simba), ElevenLabs, RapidAPI - in multiple languages
-* Text to Image experimental service on HuggingFace
+* <b>AI Orchestrator</b> component to control which AI components you want to leverage
+* <b>AI Text Filter</b> component to control what AI components to call using a basic lexical scanning mechanism using keywords
+* Many <b>LLM's</b> supported hosted on Google, GroqCloud and even local (Ollama) - LLaMa, DeepSeek, Gemini, Gemma etc...
+* 3 <b>Speech to Text</b> services supported: GroqCloud(OpenAI Whisper), HuggingFace(several inference models), ELevenlabs - in multiple languages
+* 3 <b>Text to Speech</b> services supported: Speechify (Simba), ElevenLabs, RapidAPI - in multiple languages
+* <b>Text to Image</b> experimental service on HuggingFace (Diffusion model)
 * NPC code uses an API key storage. API keys are stored in Assets/Resources/Secure which is EXCLUDED from GitHub synchronisation (ie. in .gitignore)
-* NPC has a RAG component which uses a local MariaDB/MySQL server to store pdf document chunks with their embeddings. This will require a Python script to load the documents into the database and generate embeddings and also a PHP script that implements a REST API for the RAG service. Please contact me if you are interested to implement RAG, I can provide the scripts and installation instructions (currently not yet integrated in this repository).
+* NPC has a <b>RAG</b> component which uses a local MariaDB/MySQL server to store pdf document chunks with their embeddings. This will require a Python script to load the documents into the database and generate embeddings and also a PHP script that implements a REST API for the RAG service. Please contact me if you are interested to implement RAG, I can provide the scripts and installation instructions (currently not yet integrated in this repository).
 
 What is new in this Branch - 20250611
 =====================================
