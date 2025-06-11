@@ -30,7 +30,7 @@ Specific AI Features
 * NPC code uses an API key storage. API keys are stored in Assets/Resources/Secure which is EXCLUDED from GitHub synchronisation (ie. in .gitignore)
 * NPC has a <b>RAG</b> component which uses a local MariaDB/MySQL server to store pdf document chunks with their embeddings. This will require a Python script to load the documents into the database and generate embeddings and also a PHP script that implements a REST API for the RAG service. Please contact me if you are interested to implement RAG, I can provide the scripts and installation instructions (currently not yet integrated in this repository).
 
-What is new in this Branch - 20250611
+<b>What is new in this Branch - 20250611</b>
 =====================================
 * Added ElevenLabs STT component
 * Sloyd Text to 3D service was deprecated as Sloyd disabled their API
