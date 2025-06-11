@@ -5,6 +5,7 @@ This is a fully featured, free*, functional Multiplayer VR UNITY 6 project. Feat
 * AI POWERED NPC: NPC with speech interaction: using STT+LLM+TTS public AI cloud services - ReadyToRun Google, GroqCloud, Ollama, Speechify, HuggingFace, ElevenLabs, and RapidAPI modules included!
 * MULTIPLAYER: Netcode for GameObjects Host and Client option
 * VOICE: Vivox Voice Services with Spatial audio (need to add your own credentials)
+* DEBUG: In game Debug Console (3rd party free component) for getting debug information on standalone VR/XR systems
 (* => excluding paid cloud services for the NPC and assumes you don't exceed the Vivox Voice services complementary service tresholds)
 
 Specific Multiplayer Features
@@ -17,7 +18,6 @@ Specific Multiplayer Features
 * Local or a web-based prefab/avatar resource repository
 * Tool to generate asset bundles to store on the web-based repository
 * First Person and Third Person mode via the UI (FP3P) with corresponding object grab methods
-* Debug Console (3rd party free component) for getting debug information on standalone VR/XR systems
 
 Specific AI Features
 ====================
