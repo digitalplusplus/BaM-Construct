@@ -3,7 +3,7 @@ What is this project
 This is a fully featured, free*, functional <b>UNITY 6 MULTIPLAYER VR</b> project. Features:
 * OPENXR: so in principle platform-agnostic
 * AI POWERED NPC: NPC with speech interaction: using STT+LLM+TTS public AI cloud services - ReadyToRun Google, GroqCloud, Ollama, Speechify, HuggingFace, ElevenLabs, and RapidAPI modules included!
-* MULTIPLAYER: Netcode for GameObjects Host and Client option
+* MULTIPLAYER: Netcode for GameObjects Host and Client option preconfigured out of the box!
 * VOICE: Vivox Voice Services with Spatial audio (need to add your own credentials)
 * DEBUG: In game Debug Console (3rd party free component) for getting debug information on standalone VR/XR systems
 (* => excluding paid cloud services for the NPC and assumes you don't exceed the Vivox Voice services complementary service tresholds)
