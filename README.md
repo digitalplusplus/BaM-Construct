@@ -1,38 +1,38 @@
 What is this project
 ====================
 This is a fully featured, free*, functional Multiplayer VR UNITY 6 project. Features:
-* Netcode for GameObjects Host and Client option
+* OPENXR: so in principle platform-agnostic
+* AI POWERED NPC: NPC with speech interaction: using STT+LLM+TTS public AI cloud services - ReadyToRun Google, GroqCloud, Ollama, Speechify, HuggingFace, ElevenLabs, and RapidAPI modules included!
+* MULTIPLAYER: Netcode for GameObjects Host and Client option
+* VOICE: Vivox Voice Services with Spatial audio (need to add your own credentials)
+(* => excluding paid cloud services for the NPC and assumes you don't exceed the Vivox Voice services complementary service tresholds)
+
+Specific Multiplayer Features
+=============================
 * Ad-hoc join capability with Just In Time client/server protocol and a server repository to synchronize prefabs across all clients post app launch
 * 2-Stage Client Sign-In process with freedom to build and use your own rigged avatars (FBX), no need to register and package the avatars in Network Manager due to the included Client-Server-Join protocol and ServerRepository object 
 * Hands, head and detailed finger tracking from your XR system to your avatars
 * 4 preconfigured avatars (male/female, human/bot), easily replace with your own avatars
 * Auto-IK component to automatically configure all IK constraints of your avatars hands, head and fingers
-* Checkbox for using a local or a web-based prefab/avatar resource repository
+* Local or a web-based prefab/avatar resource repository
 * Tool to generate asset bundles to store on the web-based repository
-* 2 different object grab implementations
-* First Person and Third Person mode via the UI (FP3P)
-* Vivox Voice Services with Spatial audio (need to add your own credentials)
+* First Person and Third Person mode via the UI (FP3P) with corresponding object grab methods
 * Debug Console (3rd party free component) for getting debug information on standalone VR/XR systems
-* OpenXR based so in principle platform-agnostic
-* AI POWERED NPC:
-* NPC with speech interface: using STT+LLM+TTS cloud services, the NPC also supports Text to Image and Text to Mesh services to generate images and 3D objects in VR - ReadyToRun Google, GroqCloud, Ollama, Speechify, HuggingFace, ElevenLabs, Sloyd, RapidAPI modules included!
-* NPC with Text to Mesh interface: using Sloyd.ai cloud services 
 
-(* => excluding paid cloud services for the NPC and assumes you don't exceed the Vivox Voice services complementary service tresholds)
+Specific AI Features
+====================
+* NPC code uses an API key storage. API keys are stored in Assets/Resources/Secure which is EXCLUDED from GitHub synchronisation (ie. in .gitignore)
+* NPC has a RAG component which uses a local MariaDB/MySQL server to store pdf document chunks with their embeddings. This will require a Python script to load the documents into the database and generate embeddings and also a PHP script that implements a REST API for the RAG service. Please contact me if you are interested to implement RAG, I can provide the scripts and installation instructions (currently not yet integrated in this repository).
 
-What is new in this Branch
-==========================
-* NPC code updated for a more secure API key storage. API keys are stored in Assets/Resources/Secure which is EXCLUDED from GitHub synchronisation (ie. in .gitignore)
-* Addition of a universal APIKeys component for the NPC which registers all AI service API keys in a central unified way and reads the APIKeys.txt file from the folder mentioned in the previous bullet.
-* NPC now has a direct Google Gemini component which supports multiple free Gemini models
-* NPC now has a RAG component which uses a local MariaDB/MySQL server to store pdf document chunks with their embeddings. This will require a Python script to load the documents into the database and generate embeddings and also a PHP script that implements a REST API for the RAG service. Please contact me if you are interested to implement RAG, I can provide the scripts and installation instructions (currently not yet integrated in this repository).
+What is new in this Branch - 20250611
+=====================================
+* Added ElevenLabs STT component
 
 Near Future Expected Updates
 ============================
 * NPC AI VISION, this means that the NPC will be able to see its environment and send these images to an LLM (eg. Google Gemini Flash) and respond to what it sees
 * NPC Web Search, ask the NPC to lookup information online using the Google Search API
-* Addition of the RAG server side scripts - REST API script and Python backend script
-
+* Addition of the RAG server side scripts - REST API script, SQL code to generate database and Python backend script
 
 Steps to get started
 ====================
